@@ -3,3 +3,23 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.page-header {
+  padding: 15px;
+}
+.subtitle {
+  color: coral;
+  display: flex;
+}
+.gif {
+  transition: all 0.5s ease-in-out;
+}
+.gif:hover {
+  opacity: 0.7;
+  background: coral;
+  transform: scale(0.95);
+}
+.loading {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}

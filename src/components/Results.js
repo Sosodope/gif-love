@@ -1,16 +1,24 @@
 import React, { Component } from "react";
+import { Col } from "react-bootstrap";
+
+const gifStyle = {
+  height: 250,
+  width: "100%"
+};
+const smPadding = {
+  padding: 5
+};
 
 class Results extends Component {
   render() {
     return (
-      <div>
-        <a href="#" target="_blank">
-          <img
-            src="https://media.tenor.com/images/efd9895e15324da631d708829687a126/tenor.gif"
-            alt="Could not load"
-          />
-        </a>
-      </div>
+      <React.Fragment>
+        <Col sm={6} lg={4} style={smPadding} className="gif">
+          <a href={this.props.link} target="_blank">
+            <img style={gifStyle} src={this.props.src} alt="Could not load" />
+          </a>
+        </Col>
+      </React.Fragment>
     );
   }
 }
