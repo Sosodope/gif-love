@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const gifStyle = {
   height: 250,
@@ -13,7 +13,7 @@ class Results extends Component {
   render() {
     return (
       <React.Fragment>
-        <Col sm={6} lg={4} style={smPadding}>
+        <Col sm={6} lg={4} style={smPadding} className="gif">
           <a href={this.props.link} target="_blank">
             <img style={gifStyle} src={this.props.src} alt="Could not load" />
           </a>
