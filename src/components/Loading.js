@@ -6,7 +6,7 @@ const Loading = props => {
     <React.Fragment>
       <Col lg={12}>
         <Alert bsStyle="warning" className="loading">
-          <strong>Loading. </strong> Please wait
+          <strong>Loading....</strong>
         </Alert>
       </Col>
     </React.Fragment>
